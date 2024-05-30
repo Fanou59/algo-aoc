@@ -69,3 +69,29 @@ Pour exécuter la solution au défi du jour 6 de l'Advent Of Code 2021, utilisez
 cd projet-1
 node index.js
 ```
+
+## Structure du Répertoire
+
+Voici la structure du répertoire de ce projet :
+
+votre-repertoire/
+├── projet-1/
+│ ├── index.js
+│ ├── input.txt
+│ ├── package.json
+│ └── README.md
+├── projet-2/
+│ ├── index.html
+│ ├── style.css
+│ ├── script.js
+│ ├── package.json
+│ └── README.md
+└── README.md
+
+## Contributeurs
+
+Stéphane Guery
+
+## Licence
+
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
