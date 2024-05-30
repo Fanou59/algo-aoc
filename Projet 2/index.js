@@ -40,4 +40,24 @@ const caractereSpeciaux = demanderReponseYoN(
 const chiffres = demanderReponseYoN("Souhaitez-vous des chiffres ?");
 const majuscules = demanderReponseYoN("Souhaitez-vous des majuscules ?");
 
-console.log(`${nbCaractere} ${caractereSpeciaux} ${chiffres} ${majuscules}`);
+/** Génération du mot de passe
+ *  On va devoir prendre en compte les réponses aux questions
+ *  => proposer ou non des caractères spéciaux (fonction random des caractères spéciaux)
+ *      -> créer la liste des caractères spéciaux
+ *  => proposer ou non des chiffres (entre 0 et 9) (Math.random()/Math.floor() pour un nombre entier)
+ *  => proposer ou non des majuscules (entre A et Z)
+ *  => tout cela dans une longueur demandée par l'utilisateur
+ *      -> création d'une chaine de caractère en fonction de cette longueur
+ *
+ *  + dans la même fonction on va avoir les majuscules, les caractères spéciaux et les chiffres
+ */
+
+//génération d'un chiffre entre 0 et 9
+//const chiffresRandom = Math.floor(Math.random() * 10);
+
+function generateurMotDePasse(
+  nbCaractere,
+  caractereSpeciaux,
+  chiffre,
+  majuscules
+) {}
