@@ -7,9 +7,7 @@ Bienvenue dans ce répertoire contenant deux projets finaux développés en Java
 1. [Description des Projets](#description-des-projets)
 2. [Installation](#installation)
 3. [Utilisation](#utilisation)
-4. [Structure du Répertoire](#structure-du-répertoire)
-5. [Contributeurs](#contributeurs)
-6. [Licence](#licence)
+4. [Contributeurs](#contributeurs)
 
 ## Description des Projets
 
@@ -70,28 +68,6 @@ cd projet-1
 node index.js
 ```
 
-## Structure du Répertoire
-
-Voici la structure du répertoire de ce projet :
-
-votre-repertoire/
-├── projet-1/
-│ ├── index.js
-│ ├── input.txt
-│ ├── package.json
-│ └── README.md
-├── projet-2/
-│ ├── index.html
-│ ├── style.css
-│ ├── script.js
-│ ├── package.json
-│ └── README.md
-└── README.md
-
 ## Contributeurs
 
 Stéphane Guery
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
