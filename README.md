@@ -25,7 +25,7 @@ Ce projet est une solution au défi du jour 6 de l'Advent Of Code 2021. Il s'agi
 
 Ce projet est une application simple qui génère des mots de passe sécurisés en fonction des critères spécifiés par l'utilisateur.
 
-- **Technologies utilisées** : JavaScript, HTML, CSS
+- **Technologies utilisées** : JavaScript
 - **Fonctionnalités principales** :
   - Génération de mots de passe aléatoires.
   - Possibilité de spécifier la longueur du mot de passe.
