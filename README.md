@@ -1,6 +1,6 @@
 # Projets Finaux en JavaScript
 
-Bienvenue dans ce répertoire contenant deux projets finaux développés en JavaScript. Ces projets démontrent diverses compétences et techniques apprises tout au long de votre parcours en développement JavaScript.
+Bienvenue dans ce répertoire contenant deux projets finaux développés en JavaScript. Ces projets démontrent diverses compétences et techniques apprises tout au long de mon parcours en développement JavaScript.
 
 ## Table des Matières
 
