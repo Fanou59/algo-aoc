@@ -70,7 +70,7 @@ node index.js
 
 ### Projet 2 : Générateur de mot de passe
 
-Pour exécuter la solution au défi du jour 6 de l'Advent Of Code 2021, utilisez la commande suivante :
+Pour exécuter le générateur de mot de passe, utilisez la commande suivante :
 
 ```bash
 cd projet-2
