@@ -1,12 +1,5 @@
 import { prompt } from "./prompt.js";
 
-/** 4 questions
- *  NB de caractères (8 - 36) -> vérifier que le numbre entré est de type number
- *  Caractères Spéciaux (y/n)
- *  Chiffres (y/n)
- *  Majuscules (y/n)
- */
-
 function demandeLeNombreDeCaractere() {
   const nbCaracteres = Number(prompt("Nombre de caractères ? (8-36) "));
 
@@ -29,8 +22,44 @@ function demanderReponseYoN(question) {
       "Répondez par 'y' pour oui ou 'n' pour non : "
     ).toLowerCase();
   }
+  if (reponse === "y") {
+    return (reponse = true);
+  } else return (reponse = false);
+}
 
-  return reponse;
+function genererMotDePasse(nombreCharacteres, majuscules, speciaux, chiffres) {
+  const listeLettres = "abcdefghijklmnopqrstuvwxyz";
+  const listeLettresMajuscules = listeLettres.toUpperCase(); // chaine minuscule transformée en majuscule
+  const listeChiffres = "1234567890";
+  const listeCaracteresSpeciaux = "@&?!%$*#";
+  let chaineCaracteres = listeLettres;
+
+  //Condition si l'utilisateur veut des MAJUSCULES
+  if (majuscules) {
+    chaineCaracteres += listeLettresMajuscules;
+  }
+
+  //Condition si l'utilisateur veut des caractères spéciaux
+  if (speciaux) {
+    chaineCaracteres += listeCaracteresSpeciaux;
+  }
+
+  //Condition si l'utilisateur veut des chiffres
+  if (chiffres) {
+    chaineCaracteres += listeChiffres;
+    console.log(chaineCaracteres);
+  }
+
+  let result = "";
+  const lettresLongueur = chaineCaracteres.length;
+
+  //création aléatoire du mot de passe sur base des infos précentes
+  for (let i = 0; i < nombreCharacteres; i++) {
+    result += chaineCaracteres.charAt(
+      Math.floor(Math.random() * lettresLongueur)
+    );
+  }
+  return result;
 }
 
 const nbCaractere = demandeLeNombreDeCaractere();
@@ -40,24 +69,10 @@ const caractereSpeciaux = demanderReponseYoN(
 const chiffres = demanderReponseYoN("Souhaitez-vous des chiffres ?");
 const majuscules = demanderReponseYoN("Souhaitez-vous des majuscules ?");
 
-/** Génération du mot de passe
- *  On va devoir prendre en compte les réponses aux questions
- *  => proposer ou non des caractères spéciaux (fonction random des caractères spéciaux)
- *      -> créer la liste des caractères spéciaux
- *  => proposer ou non des chiffres (entre 0 et 9) (Math.random()/Math.floor() pour un nombre entier)
- *  => proposer ou non des majuscules (entre A et Z)
- *  => tout cela dans une longueur demandée par l'utilisateur
- *      -> création d'une chaine de caractère en fonction de cette longueur
- *
- *  + dans la même fonction on va avoir les majuscules, les caractères spéciaux et les chiffres
- */
-
-//génération d'un chiffre entre 0 et 9
-//const chiffresRandom = Math.floor(Math.random() * 10);
-
-function generateurMotDePasse(
+const motDePasse = genererMotDePasse(
   nbCaractere,
+  majuscules,
   caractereSpeciaux,
-  chiffre,
-  majuscules
-) {}
+  chiffres
+);
+console.log(motDePasse);
