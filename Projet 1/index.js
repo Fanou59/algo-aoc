@@ -4,11 +4,6 @@ import { parse } from "path";
 const test = readFileSync("test.txt", "utf8");
 const final = readFileSync("final.txt", "utf8");
 
-const nbFish = howManyFish(18, test);
-const nbFish2 = howManyFish(256, final);
-console.log(nbFish);
-console.log(nbFish2);
-
 //fonction complète avec 2 paramètres (le nombre de jour, le fichier de départ)
 function howManyFish(days, fishNumberStart) {
   const firstPoissonsLune = fishNumberStart
@@ -40,3 +35,10 @@ function howManyFish(days, fishNumberStart) {
   const totalFish = timerFish.reduce((acc, curr) => acc + curr, 0);
   return totalFish;
 }
+
+const nbFish = howManyFish(18, test);
+const nbFish2 = howManyFish(80, test);
+const nbFish3 = howManyFish(256, final);
+console.log(nbFish);
+console.log(nbFish2);
+console.log(nbFish3);
